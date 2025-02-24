@@ -1,4 +1,7 @@
 // https://www.figmc.com/design/IVlfjt3Si0iElpYIop1ppK/Desafios
+// npm init -v
+// npm i prompt -sync
+// node arquivo.js
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
