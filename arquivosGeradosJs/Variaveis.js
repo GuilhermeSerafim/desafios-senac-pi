@@ -1,15 +1,16 @@
-var nome = "João";
+"use strict";
+let nome = "João";
 console.log(nome); // Saída: João
-var idade = 25;
+let idade = 25;
 console.log(idade); // Saída: 25
-var isAtivo = true;
+let isAtivo = true;
 console.log(isAtivo); // Saída: true
-var pessoa = ["Maria", 30];
+let pessoa = ["Maria", 30];
 console.log(pessoa); // Saída: ["Maria", 30]
-var valorQualquer = "Isso pode ser qualquer coisa";
+let valorQualquer = "Isso pode ser qualquer coisa";
 valorQualquer = 42; // Agora é um número
 console.log(valorQualquer); // Saída: 42
-var usuario = {
+let usuario = {
     nome: "Carlos",
     idade: 28
 };
@@ -20,12 +21,18 @@ var Cor;
     Cor["Verde"] = "VERDE";
     Cor["Azul"] = "AZUL";
 })(Cor || (Cor = {}));
-var corFavorita = Cor.Vermelho;
+let corFavorita = Cor.Vermelho;
 console.log(corFavorita); // Saída: VERMELHO
-var nulo = null;
-var indefinido = undefined;
+let nulo = null;
+let indefinido = undefined;
 console.log(nulo, indefinido); // Saída: null undefined
 function logarMensagem(mensagem) {
     console.log(mensagem);
 }
-logarMensagem("Hello, World!");
+logarMensagem("Olá, TypeScript!"); // Saída: Olá, TypeScript!
+// Comandos executados:
+// npm i --global typescript
+// npm i --global npx
+// npx tsc aula2/arq.ts
+// Ai gera um arq.js
+// Executamos com node arq.js

@@ -33,5 +33,25 @@ logarMensagem("Olá, TypeScript!"); // Saída: Olá, TypeScript!
 // Comandos executados:
 // npm i --global typescript
 // npm i --global npx
-// Ai gera um arq.js
-// Executamos com node arq.js
+// Implementar o tsconfig.json:
+/*
+{
+  "compilerOptions": {
+    "module": "ESNext", // Gera módulos ESNext (suporta ESM nativamente)
+    "target": "ESNext", // Usa recursos mais modernos do JavaScript
+    "moduleResolution": "Node", // Resolve módulos de acordo com o Node.js
+    "esModuleInterop": true, // Habilita compatibilidade com módulos CommonJS
+    "outDir": "./arquivosGeradosJs", // Pasta onde os arquivos compilados serão gerados
+    "strict": true, // Habilita todas as verificações estritas do TypeScript
+    "skipLibCheck": true // Ignora verificação de tipos nas bibliotecas
+  },
+  "include": [
+    "*.ts" // Onde seus arquivos TypeScript estão localizados
+    ,
+    "aula2/*.ts"
+  ]
+}
+*/
+// npx tsc
+// Gera os arquivos .js
+// Execute com node
