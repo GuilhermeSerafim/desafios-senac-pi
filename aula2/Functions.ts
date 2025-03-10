@@ -20,3 +20,5 @@ function verificaParOuImpar(): void {
 helloWord();
 console.log("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬");
 verificaParOuImpar();
+
+// PODEMOS SIMPLESMENTE EXECTAR COM NPX TSX EX1.TS
