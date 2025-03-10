@@ -55,3 +55,6 @@ logarMensagem("Olá, TypeScript!"); // Saída: Olá, TypeScript!
 // npx tsc
 // Gera os arquivos .js
 // Execute com node
+
+
+// obs - npx tsc também replica, quando é executado!
