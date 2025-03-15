@@ -14,20 +14,16 @@ type Disciplina = {
     nota3: number
 }
 
-// Situação:
-// Aprovado: média ≥ 7.0
-// Reprovado: média < 5.0
-// Recuperação: 5.0 ≤ média < 7.0 */
 type Boletim = {
     disciplina: string,
     media: number,
     situacao: string
 }
 
+// Captura de dados
 const nomeAluno = prompt("Informe o nome do aluno: ");
 const disciplinas: Disciplina[] = [];
 
-// Input disciplina e notas
 while (true) {
     const maisDisciplina = prompt("Quer informar uma disciplina? (sim/não): ").toLowerCase();
     if (maisDisciplina !== "sim") break;
