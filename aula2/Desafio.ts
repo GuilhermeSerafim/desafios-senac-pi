@@ -44,8 +44,6 @@ const alunoA: Aluno = {
     disciplinas: disciplinas,
 }
 
-
-// Percorre notas, calcular media e mostrar todos os boletins de cada respectiva materia do aluno
 function gerarBoletim(aluno: Aluno): Boletim[] {
     const boletimArr: Boletim[] = [];
     for (let i = 0; i < aluno.disciplinas.length; i++) {
