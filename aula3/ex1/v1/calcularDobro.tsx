@@ -4,4 +4,4 @@ const prompt = PromptSync();
 
 const n = parseInt(prompt("Digite um número: "));
 const dobro = n * 2;
-console.log(`Dobro: ${dobro}`);
+console.log(`O dobro de ${n} é ${dobro}`);
