@@ -16,7 +16,7 @@ export function escrever(msg: string): void {
 }
 
 export function apresentarMenu(): number {
-      escrever('\n-- GERENCIADOR DE TAREFAS --');
+      escrever('\n▬▬▬ GERENCIADOR DE TAREFAS ▬▬▬');
         escrever('[1]. Nova Tarefa');
         escrever('[2]. Listar Tarefas');
         escrever('[3]. Remover Tarefa');

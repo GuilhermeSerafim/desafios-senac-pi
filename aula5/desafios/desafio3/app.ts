@@ -16,8 +16,8 @@ while (opcao != 0) {
             break;
         case 3:
             let cdDeletar = tela.pedirTexto('Informe o código:');
-            let dsDeletar = tela.pedirTexto('Informe a tarefa:');
-            gerenciador.(codigo, descricao);
+            gerenciador.deletarTarefa(cdDeletar);
+            console.log("Tarefa removida!");
             break;
         case 4:
             // código para alterar
