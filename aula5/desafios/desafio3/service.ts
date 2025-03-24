@@ -59,6 +59,10 @@ export class GerenciadorTarefas {
   }
 
   marcarConcluido(posicao: number) {
+    if(posicao > this.tarefas.length) {
+      console.log("Informe uma posição válida");
+      return; // Early return
+    }
     for(let i = 0; i < this.tarefas.length; i++) {
       if(posicao == i) {
         this.tarefas[i].concluida = true;
