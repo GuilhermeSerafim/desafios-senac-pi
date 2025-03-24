@@ -28,6 +28,7 @@ while (opcao != 0) {
             break;
         case 5:
             let posicaoConcluir = tela.pedirNumero("Informe à posição do elemento: ");
+            gerenciador.marcarConcluido(posicaoConcluir);
             break;
         case 0:
             console.log("Encerrando...")

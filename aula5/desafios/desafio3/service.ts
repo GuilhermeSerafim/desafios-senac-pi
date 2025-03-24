@@ -57,4 +57,14 @@ export class GerenciadorTarefas {
       descricao: dsAlterar
     }
   }
+
+  marcarConcluido(posicao: number) {
+    for(let i = 0; i < this.tarefas.length; i++) {
+      if(posicao == i) {
+        this.tarefas[i].concluida = true;
+        break;
+      }
+    }
+  }
+
 }

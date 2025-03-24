@@ -21,7 +21,7 @@ export function apresentarMenu(): number {
         escrever('[2]. Listar Tarefas');
         escrever('[3]. Remover Tarefa');
         escrever('[4]. Alterar Tarefa');
-        escrever('[5]. Marcar como Conluído');
+        escrever('[5]. Marcar como Concluído');
         escrever('[0]. Sair');
         return Number(ler(""));
 }
