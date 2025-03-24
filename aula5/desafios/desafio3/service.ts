@@ -44,5 +44,17 @@ export class GerenciadorTarefas {
       Isso resulta em uma duplicação do valor no final do array. 
       Por isso, após o deslocamento, ajustamos o tamanho do array, reduzindo-o em 1, para remover o item duplicado.
     */
+
+  }
+  alterar(
+    posicaoAlterar: number,
+    cdAlterar: string,
+    dsAlterar: string
+  ) {
+    this.tarefas[posicaoAlterar] = {
+      ...this.tarefas[posicaoAlterar], // copia tudo
+      codigo: cdAlterar,
+      descricao: dsAlterar
+    }
   }
 }

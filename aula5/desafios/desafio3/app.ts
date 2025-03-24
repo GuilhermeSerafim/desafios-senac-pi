@@ -7,26 +7,30 @@ let opcao = tela.apresentarMenu();
 while (opcao != 0) {
     switch (opcao) {
         case 1:
-            let cdAdicionar = tela.pedirTexto('Informe o código:');
-            let dsAdicionar = tela.pedirTexto('Informe a tarefa:');
+            let cdAdicionar = tela.pedirTexto('Informe o código: ');
+            let dsAdicionar = tela.pedirTexto('Informe a tarefa: ');
             gerenciador.novaTarefa(cdAdicionar, dsAdicionar);
             break;
         case 2:
             gerenciador.listarTarefas();
             break;
         case 3:
-            let cdDeletar = tela.pedirTexto('Informe o código:');
+            let cdDeletar = tela.pedirTexto('Informe o código: ');
             gerenciador.deletarTarefa(cdDeletar);
             console.log("Tarefa removida!");
             break;
         case 4:
-            // código para alterar
+            let posicaoAlterar = tela.pedirNumero("Informe à posição do elemento: ");
+            let cdAlterar = tela.pedirTexto("Informe o código: ");
+            let dsAlterar = tela.pedirTexto("Informe a descrição: ");
+            gerenciador.alterar(posicaoAlterar, cdAlterar, dsAlterar);
+            console.log("Tarefa alterada!")
             break;
         case 5:
-            // código para marcar conluído
+            let posicaoConcluir = tela.pedirNumero("Informe à posição do elemento: ");
             break;
         case 0:
-            // código para sair
+            console.log("Encerrando...")
             break;
         default:
             // código inválido
