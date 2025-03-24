@@ -2,9 +2,9 @@ import { GerenciadorTarefas } from './service';
 import * as tela from './view'
 
 let gerenciador = new GerenciadorTarefas();
-
-let opcao = tela.apresentarMenu();
-while (opcao != 0) {
+let opcao = -1; // Inicializando variavél
+do {
+    opcao = tela.apresentarMenu();
     switch (opcao) {
         case 1:
             let cdAdicionar = tela.pedirTexto('Informe o código: ');
@@ -34,9 +34,7 @@ while (opcao != 0) {
             console.log("Encerrando...")
             break;
         default:
-            // código inválido
+            console.log("Digite uma opção válida")
             break;
     }
-
-    opcao = tela.apresentarMenu();
-}
+} while (opcao != 0);
